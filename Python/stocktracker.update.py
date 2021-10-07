@@ -14,7 +14,7 @@ print(last_price)
 
 #####sender_email = "blank@gmail.com" 
 #####rec_email = "blank@gmail.com" 
-###password = ("blank") 
+###password = ("blank")
 message = "AAPL STOCK ALERT!!! The stock is at above price you set " + "%.6f" % last_price 
 
 target_sell_price = 140 
