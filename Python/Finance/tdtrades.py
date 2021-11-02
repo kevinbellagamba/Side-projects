@@ -5,7 +5,7 @@ import json
 import configtd
 import datetime
 
-# authenticate
+#authenticate
 try:
     c = auth.client_from_token_file(configtd.token_path, configtd.api_key)
 except FileNotFoundError:
@@ -14,7 +14,7 @@ except FileNotFoundError:
         c = auth.client_from_login_flow(
             driver, configtd.api_key, configtd.redirect_uri, configtd   .token_path)
 
-# get price history for a symbol
+#get price history for a symbol
 r = c.get_price_history('ETEK',
         period_type=client.Client.PriceHistory.PeriodType.YEAR,
         period=client.Client.PriceHistory.Period.TWENTY_YEARS,
